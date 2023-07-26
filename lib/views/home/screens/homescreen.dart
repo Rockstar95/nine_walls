@@ -52,7 +52,7 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
     return WillPopScope(
       onWillPop: onWillPop,
       child: ModalProgressHUD(
-        inAsyncCall: !isPageLoaded,
+        inAsyncCall: false,
         opacity: 1,
         color: themeData.scaffoldBackgroundColor,
         child: Scaffold(

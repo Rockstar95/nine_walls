@@ -16,7 +16,7 @@ class _SplashScreenState extends State<SplashScreen> {
   late ThemeData themeData;
 
   Future<void> checkLogin() async {
-    await Future.delayed(const Duration(seconds: 5));
+    await Future.delayed(const Duration(seconds: 3));
 
     if (context.checkMounted() && context.mounted) Navigator.pushNamed(context, HomeScreen.routeName);
   }
